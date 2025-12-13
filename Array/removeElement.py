@@ -6,11 +6,13 @@ The order of the elements may be changed. Then return the number of elements in 
 """
 
 def removeElement(nums, val):
+  
     """
     :type nums: List[int]
     :type val: int
     :rtype: int
     """
+    
     # Initialize 'k', which acts as our "Writer" pointer.
     # It keeps track of the position where the NEXT valid number should be placed.
     # It also serves as the counter for how many valid elements we have found.
