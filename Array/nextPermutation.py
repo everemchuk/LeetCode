@@ -14,7 +14,7 @@ def nextPermutation(nums):
     :type nums: List[int]
     :rtype: None Do not return anything, modify nums in-place instead.
     """
-		
+
     n = len(nums)
     
     # Edge case: arrays with 0 or 1 element have no next permutation
@@ -68,23 +68,22 @@ def nextPermutation(nums):
 
 
 # Example usage and test cases
-if __name__ == "__main__":
-    # Test case 1: Normal case
-    test1 = [1, 2, 3]
-    nextPermutation(test1)
-    print(f"[1,2,3] -> {test1}")  # Expected: [1, 3, 2]
-    
-    # Test case 2: Descending order (wrap around)
-    test2 = [3, 2, 1]
-    nextPermutation(test2)
-    print(f"[3,2,1] -> {test2}")  # Expected: [1, 2, 3]
-    
-    # Test case 3: With duplicates
-    test3 = [1, 1, 5]
-    nextPermutation(test3)
-    print(f"[1,1,5] -> {test3}")  # Expected: [1, 5, 1]
-    
-    # Test case 4: Larger example
-    test4 = [1, 5, 8, 4, 7, 6, 5, 3, 1]
-    nextPermutation(test4)
-    print(f"[1,5,8,4,7,6,5,3,1] -> {test4}")  # Expected: [1, 5, 8, 5, 1, 3, 4, 6, 7]
+# Test case 1: Normal case
+test1 = [1, 2, 3]
+nextPermutation(test1)
+print(f"[1,2,3] -> {test1}")  # Expected: [1, 3, 2]
+
+# Test case 2: Descending order (wrap around)
+test2 = [3, 2, 1]
+nextPermutation(test2)
+print(f"[3,2,1] -> {test2}")  # Expected: [1, 2, 3]
+
+# Test case 3: With duplicates
+test3 = [1, 1, 5]
+nextPermutation(test3)
+print(f"[1,1,5] -> {test3}")  # Expected: [1, 5, 1]
+
+# Test case 4: Larger example
+test4 = [1, 5, 8, 4, 7, 6, 5, 3, 1]
+nextPermutation(test4)
+print(f"[1,5,8,4,7,6,5,3,1] -> {test4}")  # Expected: [1, 5, 8, 5, 1, 3, 4, 6, 7]
