@@ -9,19 +9,10 @@ The replacement must be in place and use only constant extra memory.
 
 
 def nextPermutation(nums):
-	
+
     """
     :type nums: List[int]
     :rtype: None Do not return anything, modify nums in-place instead.
-    
-    Algorithm Overview:
-    1. Find the largest index 'i' such that nums[i] < nums[i + 1] (the "pivot")
-    2. Find the largest index 'j' such that nums[i] < nums[j] (the "successor")
-    3. Swap nums[i] and nums[j]
-    4. Reverse the suffix starting at nums[i + 1]
-    
-    Time Complexity: O(n) - we traverse the array at most 3 times
-    Space Complexity: O(1) - only constant extra space is used
     """
     n = len(nums)
     
