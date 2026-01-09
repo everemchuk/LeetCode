@@ -14,6 +14,7 @@ def nextPermutation(nums):
     :type nums: List[int]
     :rtype: None Do not return anything, modify nums in-place instead.
     """
+		
     n = len(nums)
     
     # Edge case: arrays with 0 or 1 element have no next permutation
